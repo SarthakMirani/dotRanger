@@ -1,0 +1,23 @@
+# Temporary/system files
+*.swp
+*.tmp
+*~
+
+# Logs
+*.log
+
+# Python/Node/temp files
+__pycache__/
+node_modules/
+
+# OS junk
+.DS_Store
+
+# Avoid browser history/config
+dotfiles/.mozilla/
+
+# Avoid SSH private keys
+dotfiles/.ssh/
+
+# Avoid bash history
+dotfiles/.bash_history
