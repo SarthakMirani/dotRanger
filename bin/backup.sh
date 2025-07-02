@@ -24,7 +24,7 @@ for file in "${dotfiles[@]}"; do
   DEST="$TARGET_DIR/$file"
 
   if [ -e "$SRC" ]; then
-    rsync -a --relative "$SRC" "$TARGET_DIR"
+    rsync -a "$SRC" "$TARGET_DIR"
     echo "📁 Backed up: $file"
   else
     echo "⚠️  $file not found — skipping."

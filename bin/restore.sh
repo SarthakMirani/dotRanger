@@ -26,7 +26,7 @@ for file in "${dotfiles[@]}"; do
   DEST="$TARGET_DIR/$file"
 
   if [ -e "$SRC" ]; then
-    rsync -a --relative "$SRC" "$TARGET_DIR"
+    rsync -a "$SRC" "$TARGET_DIR"
     echo "🔄 Restored: $file"
   else
     echo "⚠️  Backup for $file not found — skipping."
