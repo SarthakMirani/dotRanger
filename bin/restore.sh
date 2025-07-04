@@ -9,6 +9,13 @@ log() {
   echo "$(date '+%Y-%m-%d %H:%M:%S') [restore] $1" | tee -a "$LOGFILE"
 }
 
+DRY_RUN=false
+
+if [[ "$1" == "--dry-run" ]]; then
+  DRY_RUN=true
+  log "🧪 Dry-run mode activated. No files will actually be restored."
+fi
+
 echo "🧬 dotRanger is restoring..."
 
 SOURCE_DIR="$(dirname "$(realpath "$0")")/../dotfiles"
@@ -32,8 +39,13 @@ for file in "${dotfiles[@]}"; do
   DEST="$TARGET_DIR/$file"
 
   if [ -e "$SRC" ]; then
-    rsync -a "$SRC" "$TARGET_DIR"
-    log "🔄 Restored: $file"
+    if [ "$DRY_RUN" = true ]; then
+      rsync -a --dry-run "$SRC" "$TARGET_DIR"
+      log "🧪 [Dry-run] Would restore: $file"
+    else
+      rsync -a "$SRC" "$TARGET_DIR"
+      log "📁 Restored: $file"
+    fi
   else
     log "⚠️  Backup for $file not found — skipping."
   fi
