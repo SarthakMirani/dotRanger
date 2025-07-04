@@ -3,6 +3,12 @@
 # dotRanger: Restore script for backed-up dotfiles
 # Author: Sarthak Mirani
 
+LOGFILE="$(dirname "$0")/../logs/dotranger.log"
+
+log() {
+  echo "$(date '+%Y-%m-%d %H:%M:%S') [restore] $1" | tee -a "$LOGFILE"
+}
+
 echo "🧬 dotRanger is restoring..."
 
 SOURCE_DIR="$(dirname "$(realpath "$0")")/../dotfiles"
@@ -27,8 +33,8 @@ for file in "${dotfiles[@]}"; do
 
   if [ -e "$SRC" ]; then
     rsync -a "$SRC" "$TARGET_DIR"
-    echo "🔄 Restored: $file"
+    log "🔄 Restored: $file"
   else
-    echo "⚠️  Backup for $file not found — skipping."
+    log "⚠️  Backup for $file not found — skipping."
   fi
 done

@@ -3,6 +3,13 @@
 # dotRanger: Backup script for selected dotfiles
 # Author: Sarthak Mirani
 
+LOGFILE="$(dirname "$0")/../logs/dotranger.log"
+
+log() {
+  echo "$(date '+%Y-%m-%d %H:%M:%S') [backup] $1" | tee -a "$LOGFILE"
+}
+
+
 echo "📦 dotRanger is starting..."
 
 SOURCE_DIR="$HOME"
@@ -25,8 +32,8 @@ for file in "${dotfiles[@]}"; do
 
   if [ -e "$SRC" ]; then
     rsync -a "$SRC" "$TARGET_DIR"
-    echo "📁 Backed up: $file"
+    log "📁 Backed up: $file"
   else
-    echo "⚠️  $file not found — skipping."
+    elog "⚠️  $file not found — skipping."
   fi
 done
