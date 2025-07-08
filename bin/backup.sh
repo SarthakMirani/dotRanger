@@ -9,7 +9,23 @@ log() {
   echo "$(date '+%Y-%m-%d %H:%M:%S') [backup] $1" | tee -a "$LOGFILE"
 }
 
-DRY_RUN=flase
+# Load ignore list
+IGNORE_FILE="$(dirname "$0")/../.dotrangerignore"
+ignored=()
+
+if [ -f "$IGNORE_FILE" ]; then
+  while IFS= read -r line; do
+    # Trim whitespace from the line
+    line="$(echo "$line" | xargs)"
+
+    # Skip empty lines and comments
+    [[ -z "$line" || "${line:0:1}" == "#" ]] && continue
+
+    ignored+=("$line")
+  done < "$IGNORE_FILE"
+fi
+
+DRY_RUN=false
 
 if [[ "$1" == "--dry-run" ]]; then
   DRY_RUN=true
@@ -31,6 +47,14 @@ dotfiles=(
 )
 
 for file in "${dotfiles[@]}"; do
+  # Skip ignored files
+  for ignore in "${ignored[@]}"; do
+    if [[ "$file" == "$ignore" ]]; then
+      log "🚫 Ignored: $file"
+      continue 2
+    fi
+  done
+
   SRC="$SOURCE_DIR/$file"
   DEST="$TARGET_DIR/$file"
 
