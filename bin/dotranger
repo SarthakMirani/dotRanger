@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# dotRanger: Main dispatcher CLI
+# Author: Sarthak Mirani
+
+COMMAND="$1"
+shift # Shift the arguments so $@ now refers to everything after the subcommand
+
+SCRIPT_DIR="$(dirname "$0")"
+
+case "$COMMAND" in
+  backup)
+    "$SCRIPT_DIR/backup.sh" "$@"
+    ;;
+  restore)
+    "$SCRIPT_DIR/restore.sh" "$@"
+    ;;
+  help|--help|-h|"")
+    echo "🛡️ dotRanger — Simple Dotfile Backup and Restore CLI"
+    echo
+    echo "Usage:"
+    echo "  dotranger backup [--dry-run|--check]"
+    echo "  dotranger restore [--dry-run|--list]"
+    echo
+    echo "Available commands:"
+    echo "  backup     Back up your dotfiles"
+    echo "  restore    Restore backed-up dotfiles"
+    echo "  --list     List available backed-up files"
+    echo "  --check    Check which dotfiles are present on the system"
+    echo "  --dry-run  Simulate actions without changing anything"
+    ;;
+  *)
+    echo "❌ Unknown command: $COMMAND"
+    echo "Run 'dotranger help' to see available commands."
+    exit 1
+    ;;
+esac
