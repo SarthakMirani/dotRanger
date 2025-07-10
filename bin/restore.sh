@@ -9,6 +9,16 @@ log() {
   echo "$(date '+%Y-%m-%d %H:%M:%S') [restore] $1" | tee -a "$LOGFILE"
 }
 
+dotfiles=(
+  ".bash_logout"
+  ".config"
+  ".gtkrc-2.0"
+  ".icons"
+  ".local"
+  ".profile"
+  ".themes"
+)
+
 # 🧾 Check for --list first
 if [[ "$1" == "--list" ]]; then
   log "📄 Listing available dotfiles to restore:"
@@ -36,6 +46,18 @@ if [[ "$1" == "--dry-run" ]]; then
   log "🧪 Dry-run mode activated. No files will actually be restored."
 fi
 
+if [[ "$1" == "--check" ]]; then
+  log "🔎 Checking presence of dotfiles in your home directory..."
+  for file in "${dotfiles[@]}"; do
+    if [ -e "$HOME/$file" ]; then
+      log "✅ Present: $file"
+    else
+      log "❌ Missing: $file"
+    fi
+  done
+  exit 0
+fi
+
 # 🚀 Proceed with restore
 echo "🧬 dotRanger is restoring..."
 
@@ -44,16 +66,6 @@ TARGET_DIR="$HOME"
 
 echo "Source: $SOURCE_DIR"
 echo "Target: $TARGET_DIR"
-
-dotfiles=(
-  ".bash_logout"
-  ".config"
-  ".gtkrc-2.0"
-  ".icons"
-  ".local"
-  ".profile"
-  ".themes"
-)
 
 for file in "${dotfiles[@]}"; do
   SRC="$SOURCE_DIR/$file"
