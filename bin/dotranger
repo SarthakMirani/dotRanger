@@ -6,7 +6,7 @@
 COMMAND="$1"
 shift # Shift the arguments so $@ now refers to everything after the subcommand
 
-SCRIPT_DIR="$(dirname "$0")"
+SCRIPT_DIR="$HOME/Projects/dotRanger/bin"
 
 case "$COMMAND" in
   backup)
@@ -19,8 +19,8 @@ case "$COMMAND" in
     echo "🛡️ dotRanger — Simple Dotfile Backup and Restore CLI"
     echo
     echo "Usage:"
-    echo "  dotranger backup [--dry-run|--check]"
-    echo "  dotranger restore [--dry-run|--list]"
+    echo "  dotranger backup [--dry-run]"
+    echo "  dotranger restore [--dry-run|--list|--check]"
     echo
     echo "Available commands:"
     echo "  backup     Back up your dotfiles"
