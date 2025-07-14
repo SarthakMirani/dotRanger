@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/sarthak/Pictures/carelog.png" added="2025-07-01T17:50:34.980796Z" modified="2025-07-01T17:50:42.242981Z" visited="2025-07-01T17:50:34.980797Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;xviewer %u&apos;" modified="2025-07-01T17:50:34.980798Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-01T17:50:42.242973Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Videos/cinnamon-2025-07-01T232942+0530.webm" added="2025-07-01T18:00:51.511401Z" modified="2025-07-01T18:01:00.552261Z" visited="2025-07-01T18:00:51.511402Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/webm"/>
+        <bookmark:applications>
+          <bookmark:application name="cinnamon" exec="&apos;cinnamon %u&apos;" modified="2025-07-01T18:00:51.511405Z" count="1"/>
+          <bookmark:application name="nemo" exec="&apos;celluloid %U&apos;" modified="2025-07-01T18:01:00.552257Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Videos/cinnamon-2025-07-01T233314+0530.webm" added="2025-07-01T18:04:03.155358Z" modified="2025-07-01T18:04:03.155367Z" visited="2025-07-01T18:04:03.155359Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/webm"/>
+        <bookmark:applications>
+          <bookmark:application name="cinnamon" exec="&apos;cinnamon %u&apos;" modified="2025-07-01T18:04:03.155362Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Videos/cinnamon-2025-07-01T233557+0530.webm" added="2025-07-01T18:10:17.745859Z" modified="2025-07-01T18:12:44.725040Z" visited="2025-07-01T18:10:17.745860Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/webm"/>
+        <bookmark:applications>
+          <bookmark:application name="cinnamon" exec="&apos;cinnamon %u&apos;" modified="2025-07-01T18:10:17.745862Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-01T18:12:44.725034Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Projects/careLog.zip" added="2025-07-01T18:15:23.819874Z" modified="2025-07-01T18:15:44.206921Z" visited="2025-07-01T18:15:23.819875Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2025-07-01T18:15:23.819902Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-01T18:15:44.206908Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Desktop/PAT_Token" added="2025-07-02T07:34:26.760848Z" modified="2025-07-02T16:27:24.676503Z" visited="2025-07-02T07:34:26.760849Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-07-02T16:27:24.676502Z" count="3"/>
+          <bookmark:application name="nemo-desktop" exec="&apos;xed %U&apos;" modified="2025-07-02T16:27:23.925322Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Desktop/DSA" added="2025-07-03T08:11:25.203264Z" modified="2025-07-09T05:30:55.892677Z" visited="2025-07-03T08:11:25.203265Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>xed</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xed" exec="&apos;xed %u&apos;" modified="2025-07-09T05:30:55.892673Z" count="27"/>
+          <bookmark:application name="nemo-desktop" exec="&apos;xed %U&apos;" modified="2025-07-09T05:29:27.604065Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/Sarthak_Mirani_Resume%20(2).pdf" added="2025-07-06T04:44:57.543441Z" modified="2025-07-06T04:44:57.543447Z" visited="2025-07-06T04:44:57.543442Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-06T04:44:57.543444Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/Sarthak_Mirani_Resume%20(2)-1.pdf" added="2025-07-06T10:55:39.242299Z" modified="2025-07-09T13:21:51.599296Z" visited="2025-07-06T10:55:39.242300Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T13:21:51.599293Z" count="17"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/Black%20and%20White%20Minimalist%20Accountant%20Resume.pdf" added="2025-07-06T11:03:17.384762Z" modified="2025-07-06T11:03:26.556260Z" visited="2025-07-06T11:03:17.384764Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-06T11:03:17.384769Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;xreader %u&apos;" modified="2025-07-06T11:03:26.556257Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/Sarthak_Resume%20alt.pdf" added="2025-07-06T11:04:19.454586Z" modified="2025-07-09T12:58:55.683345Z" visited="2025-07-06T11:04:19.454587Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T12:58:55.683339Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Projects/dotRanger" added="2025-07-07T08:48:46.093316Z" modified="2025-07-07T08:48:46.093324Z" visited="2025-07-07T08:48:46.093317Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2025-07-07T08:48:46.093320Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Desktop/Mentor.pdf" added="2025-07-08T05:18:42.148527Z" modified="2025-07-08T05:18:46.116163Z" visited="2025-07-08T05:18:42.148528Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-08T05:18:42.448319Z" count="2"/>
+          <bookmark:application name="nemo-desktop" exec="&apos;xreader %U&apos;" modified="2025-07-08T05:18:46.116159Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/Fedora-i3-Live-x86_64-42-1.1.iso" added="2025-07-08T13:54:43.287568Z" modified="2025-07-09T11:35:35.132267Z" visited="2025-07-08T13:54:43.287570Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-08T13:54:43.287573Z" count="1"/>
+          <bookmark:application name="balena-etcher" exec="&apos;balena-etcher %u&apos;" modified="2025-07-09T11:35:35.132263Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/PLACEMENT%20GUIDE%20EDITION%202%20-%202025.pdf" added="2025-07-09T05:39:14.489067Z" modified="2025-07-09T05:39:14.489078Z" visited="2025-07-09T05:39:14.489069Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T05:39:14.489073Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads/balenaEtcher-linux-x64-2.1.2.zip" added="2025-07-09T11:27:03.105826Z" modified="2025-07-09T11:29:31.653431Z" visited="2025-07-09T11:27:03.105828Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T11:27:03.105835Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2025-07-09T11:29:31.653430Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sarthak/Downloads" added="2025-07-09T11:29:38.138195Z" modified="2025-07-09T11:29:38.138203Z" visited="2025-07-09T11:29:38.138197Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Archive Manager" exec="&apos;file-roller %u&apos;" modified="2025-07-09T11:29:38.138199Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
